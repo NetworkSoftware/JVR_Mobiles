@@ -2,7 +2,8 @@ package com.network.moeidbannerlibrary.banner;
 
 public class Utils {
 
-    public static final String ip = "http://thestockbazaar.com/admin/e-commerce/yalu_mobile";
+    public static final String ip = "http://thestockbazaar.com/prisma/jvrmobiles";
+ // public static final String ip = "http://192.168.1.100:8114/prisma/jvrmobiles";
     public static final String IMAGE_URL = ip + "/images/";
 
     public static String getResizedImage(String path, boolean isResized) {

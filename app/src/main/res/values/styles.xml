@@ -3,15 +3,15 @@
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorPrimary</item>
     </style>
 
     <style name="AppThemeImage" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#e7320e</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@android:color/transparent</item>
-        <item name="colorAccent">#e7320e</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
         <item name="android:windowLightStatusBar">true</item>
 
     </style>
@@ -26,24 +26,24 @@
     </style>
     <style name="AppThemeNo" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#e7320e</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">#e7320e</item>
+        <item name="colorAccent">@color/colorPrimary</item>
         <item name="android:windowLightStatusBar">true</item>
 
     </style>
     <style name="AppThemeNowhite" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#e7320e</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/white</item>
-        <item name="colorAccent">#e7320e</item>
+        <item name="colorAccent">@color/colorPrimary</item>
         <item name="android:windowLightStatusBar">true</item>
 
     </style>
     <style name="AppThemeNowhitesplash" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorPrimary</item>
         <item name="android:windowTranslucentStatus">true</item>
 
@@ -51,7 +51,7 @@
     <style name="AppThemeNowhitemain" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">#D63D71</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorPrimary</item>
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowLightStatusBar">false</item>
@@ -119,7 +119,7 @@
     <style name="AppThemeMat" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item><!-- menu bar -->
-        <item name="colorPrimaryDark">#FF4081</item><!--status bar color-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item><!--status bar color-->
         <item name="colorAccent">@color/colorAccent</item><!-- change the checkbox color -->
         <item name="colorButtonNormal">#009688</item><!-- button color-->
         <item name="android:actionMenuTextColor">@color/white</item>

@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff">
-
-
 
 
     <androidx.core.widget.NestedScrollView
@@ -20,24 +17,27 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <com.network.moeidbannerlibrary.banner.BannerLayout
+                android:id="@+id/Banner"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                app:autoPlaying="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:centerScale="1.1"
+                app:itemSpace="50"
+                app:moveSpeed="0.5"
+                app:showIndicator="true" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/categories"
                 android:layout_above="@+id/scroll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp" />
-            <com.network.moeidbannerlibrary.banner.BannerLayout
-                android:id="@+id/Banner"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:textAlignment="center"
-                app:autoPlaying="true"
-                app:centerScale="1.1"
-                app:itemSpace="50"
-                app:moveSpeed="0.5"
-                app:showIndicator="true"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -66,29 +66,28 @@
 
             </androidx.recyclerview.widget.RecyclerView>
 
-        <!--    <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:fontFamily="@font/sans_bold"
-                android:text="Recents"
-                android:textColor="#000"
-                android:textSize="18dp" />
+            <!--    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/sans_bold"
+                    android:text="Recents"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_product"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:nestedScrollingEnabled="false"
-                android:layout_marginBottom="10dp" />-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginBottom="10dp" />-->
 
 
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
-
 
 
 </RelativeLayout>

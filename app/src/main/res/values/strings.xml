@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">YALU MOBILES</string>
-    <string name="name">YALU</string>
-    <string name="app_name_home">YALU MOBILES</string>
+    <string name="app_name">JVR MOBILES</string>
+    <string name="name">JVR</string>
+    <string name="app_name_home">JVR MOBILES</string>
     <string name="submit">SUBMIT</string>
     <string name="cancel">CANCEL</string>
     <string name="locationPermissionAlert">Please Enable this permission to identify  your password and send to your mobile as SMS</string>
