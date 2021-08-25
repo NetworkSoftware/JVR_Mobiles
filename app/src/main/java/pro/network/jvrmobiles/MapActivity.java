@@ -43,11 +43,11 @@ public class MapActivity extends Fragment {
                 googleMap = mMap;
 
                 // For dropping a marker at a point on the Map
-                LatLng sydney = new LatLng(9.9242109, 78.1127871);
+                LatLng sydney = new LatLng(11.0715731,79.5559677);
                 googleMap.addMarker(new MarkerOptions()
                         .position(sydney)
                         .title("JVR Mobiles")).showInfoWindow();
-                googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(9.9242109, 78.1127871), 15f));
+                googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(11.0715731,79.5559677), 15f));
                 googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
                     @Override
                     public boolean onMarkerClick(Marker marker) {

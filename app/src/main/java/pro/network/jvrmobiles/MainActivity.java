@@ -14,8 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import com.ismaeldivita.chipnavigation.ChipNavigationBar;
-
 import org.jetbrains.annotations.NotNull;
 
 import nl.joery.animatedbottombar.AnimatedBottomBar;
@@ -26,6 +24,8 @@ import pro.network.jvrmobiles.app.DatabaseHelperJVR;
 import pro.network.jvrmobiles.app.DbWishList;
 import pro.network.jvrmobiles.cart.CartActivity;
 import pro.network.jvrmobiles.orders.MyOrderPage;
+import pro.network.jvrmobiles.web.WebActivity;
+import pro.network.jvrmobiles.web.WebFragment;
 import pro.network.jvrmobiles.wishlist.WishListActivity;
 
 import static android.content.ContentValues.TAG;
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements CartActivity.OnCa
                         fragment = new AboutusActivity();
                         break;
                     case R.id.map:
-                        fragment = new MapActivity();
+                        fragment = new WebFragment();
                         break;
                 }
 

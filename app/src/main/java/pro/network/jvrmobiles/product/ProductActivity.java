@@ -100,7 +100,7 @@ public class ProductActivity extends BaseActivity implements ViewClick {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:9698799799"));
+                intent.setData(Uri.parse("tel:9894576511"));
                 startActivity(intent);
             }
         });
@@ -115,14 +115,14 @@ public class ProductActivity extends BaseActivity implements ViewClick {
 
                 try {
                     Intent intent = new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=919698799799"
-                            + "&text=" + "Hi YALU MOBILES, I would like buy this *" + product_name.getText().toString() + "* product"));
+                    intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=919894576511"
+                            + "&text=" + "Hi JVR MOBILES, I would like buy this *" + product_name.getText().toString() + "* product"));
                     intent.setPackage("com.whatsapp.w4b");
                     startActivity(intent);
                 } catch (ActivityNotFoundException e) {
                     Intent intent = new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=919698799799"
-                            + "&text=" + "Hi YALU MOBILES, I would like buy this *" + product_name.getText().toString() + "* product"));
+                    intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=919894576511"
+                            + "&text=" + "Hi JVR MOBILES, I would like buy this *" + product_name.getText().toString() + "* product"));
                     intent.setPackage("com.whatsapp");
                     startActivity(intent);
                 } catch (Exception e) {
@@ -236,7 +236,7 @@ public class ProductActivity extends BaseActivity implements ViewClick {
                         Intent intent = new Intent(android.content.Intent.ACTION_SEND);
                         intent.putExtra(Intent.EXTRA_STREAM, bitmap);
                         intent.putExtra(Intent.EXTRA_TEXT, productBean.getBrand()+
-                                " "+productBean.getModel() + "\nVisit more products like this\nhttps://play.google.com/store/apps/details?id=pro.yalu.network");
+                                " "+productBean.getModel() + "\nVisit more products like this\nhttps://play.google.com/store/apps/details?id=pro.jvrmobiles.network");
                         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                         intent.setType("image/png");
                         startActivity(intent);

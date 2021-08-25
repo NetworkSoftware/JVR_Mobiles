@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <color name="colorPrimary">#EF2D6F</color>
-    <color name="colorPrimaryDark">#DF024D</color>
+    <color name="colorPrimaryDark">#EF1A63</color>
     <color name="chipSelected">#DEF1D0</color>
     <color name="chipUnSelect">#FBF7F7</color>
     <color name="colorAccent">#EF2D6F</color>

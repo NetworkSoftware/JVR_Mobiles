@@ -3,7 +3,7 @@ package pro.network.jvrmobiles.product;
 import java.io.Serializable;
 
 public class ProductBean implements Serializable {
-    public static final String TABLE_NAME = "yalu_mobile_table";
+    public static final String TABLE_NAME = "jvr_mobile_table";
 
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_PRO_ID = "proid";

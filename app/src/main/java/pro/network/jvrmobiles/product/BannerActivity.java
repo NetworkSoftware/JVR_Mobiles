@@ -67,14 +67,14 @@ public class BannerActivity extends BaseActivity {
                         getCallingActivity().getPackageName().equals("pro.jvrmobiles.network")) {
                     try {
                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                        intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=919698799799"
+                        intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=919894576511"
                                 + "&text=" + "Hi JVR MOBILES, I would like buy this *" + getIntent().getStringExtra("description") + "* product"));
                         intent.setPackage("com.whatsapp.w4b");
                         startActivity(intent);
                     } catch (ActivityNotFoundException e) {
                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                        intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=919698799799"
-                                + "&text=" + "Hi YALU MOBILES, I would like buy this *" + getIntent().getStringExtra("description") + "* product"));
+                        intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=919894576511"
+                                + "&text=" + "Hi JVR MOBILES, I would like buy this *" + getIntent().getStringExtra("description") + "* product"));
                         intent.setPackage("com.whatsapp");
                         startActivity(intent);
                     }catch (Exception e) {

@@ -133,7 +133,7 @@ public class AboutusActivity extends BaseFragment implements OnAboutListener {
      //   aboutUsArrayList.add(new AboutUs("Facebook", "JVR Mobiles", getResources().getDrawable(R.drawable.ic_icons_facebook)));
      //   aboutUsArrayList.add(new AboutUs("Youtube", "Follow us on Youtube", getResources().getDrawable(R.drawable.ic_outline_videocam_24)));
     //    aboutUsArrayList.add(new AboutUs("Instagram", "JVR Mobiles", getResources().getDrawable(R.drawable.ic_icons_instagram)));
-        aboutUsArrayList.add(new AboutUs("We are located at", "9.9242109, 78.1127871", getResources().getDrawable(R.drawable.ic_location_on_black_24dp)));
+     //   aboutUsArrayList.add(new AboutUs("We are located at", "11.0715731,79.5559677", getResources().getDrawable(R.drawable.ic_location_on_black_24dp)));
         aboutUsArrayList.add(new AboutUs("Feedback", "Leave your feedback here..", getResources().getDrawable(R.drawable.ic_outline_feedback_24)));
         aboutUsArrayList.add(new AboutUs("Version", version, getResources().getDrawable(R.drawable.ic_phone_android_black_24dp)));
         aboutusAdapter.notifyData(aboutUsArrayList);
@@ -143,13 +143,13 @@ public class AboutusActivity extends BaseFragment implements OnAboutListener {
     private void openWhatsApp() {
         try {
             Intent intent6 = new Intent(Intent.ACTION_VIEW);
-            intent6.setData(Uri.parse("http://api.whatsapp.com/send?phone=919698799799"
+            intent6.setData(Uri.parse("http://api.whatsapp.com/send?phone=919894576511"
                     + "&text=" + "Hi JVR Mobiles"));
             intent6.setPackage("com.whatsapp.w4b");
             startActivity(intent6);
         } catch (ActivityNotFoundException e) {
             Intent intent6 = new Intent(Intent.ACTION_VIEW);
-            intent6.setData(Uri.parse("http://api.whatsapp.com/send?phone=919698799799"
+            intent6.setData(Uri.parse("http://api.whatsapp.com/send?phone=919894576511"
                     + "&text=" + "Hi JVR Mobiles"));
             intent6.setPackage("com.whatsapp");
             startActivity(intent6);
@@ -191,7 +191,7 @@ public class AboutusActivity extends BaseFragment implements OnAboutListener {
             startActivity(intent);
         } else if (title.equalsIgnoreCase("Youtube")) {
             Intent intent = new Intent(getActivity(), WebActivity.class);
-            intent.putExtra("url", "https://www.youtube.com/results?search_query=yalu+mobiles+madurai");
+            intent.putExtra("url", "https://www.youtube.com/results?search_query=jvrmobiles+mobiles+madurai");
             intent.putExtra("name", "Youtube");
             startActivity(intent);
         } else if (title.equalsIgnoreCase("Instagram")) {
@@ -201,7 +201,7 @@ public class AboutusActivity extends BaseFragment implements OnAboutListener {
             startActivity(intent);
         } else if (title.equalsIgnoreCase("We are located at")) {
             Intent intent = new Intent(getActivity(), WebActivity.class);
-            intent.putExtra("url", "https://www.google.com/maps/place/YALU+MOBILES/@9.9242109,78.1127871,15z/data=!4m5!3m4!1s0x0:0x6f4069490e53dd6d!8m2!3d9.9242109!4d78.1127871");
+            intent.putExtra("url", "https://www.google.com/maps/place/JVR+CELL+SERVICES/@11.0715731,79.5559677,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5529139cc16a05:0x36902f002d702d3d!8m2!3d11.0715731!4d79.5581564");
             intent.putExtra("name", "We are located at");
             startActivity(intent);
         } else if (title.equalsIgnoreCase("Whatsapp")) {
@@ -345,7 +345,7 @@ public class AboutusActivity extends BaseFragment implements OnAboutListener {
 
     private void doCall() {
         Intent intent = new Intent(Intent.ACTION_DIAL);
-        intent.setData(Uri.parse("tel:9698799799"));
+        intent.setData(Uri.parse("tel:919894576511"));
         startActivity(intent);
     }
 

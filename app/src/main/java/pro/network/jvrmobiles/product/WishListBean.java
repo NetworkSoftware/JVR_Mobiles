@@ -3,7 +3,7 @@ package pro.network.jvrmobiles.product;
 import java.io.Serializable;
 
 public class WishListBean implements Serializable {
-    public static final String TABLE_NAME = "yalu";
+    public static final String TABLE_NAME = "jvr";
     public static final String COLUMN_PRO_ID = "proid";
 
     public static final String COLUMN_ID = "id";
